@@ -1,8 +1,9 @@
 2026-3-13。Go学习笔记
 1.安装go环境，并验证安装是否成功
 2.安装vscode编辑器，并设置自动补全代码（1.编辑中文 2.下载go 3.配置自动化）
-3.自动上传至github
+3.自动上传至github ----详细见下
 4.输出单词
+5.fmt的三种方法 ---详细见下
 
 如何自动上传代码至github
 1.初始化仓库   git init
@@ -50,3 +51,10 @@ git commit -m “写清楚修改了什么”
 
 4.然后推送
 git push
+
+
+
+fmt包 常见的输出的三种方法：prit pirntln pringf
+print 和 println的区别
+1. println 会自动换行，print不会（会紧挨着）
+2. 一次输入多个值的时候println，每个值之间会有空格，print没有

@@ -1,0 +1,52 @@
+2026-3-13。Go学习笔记
+1.安装go环境，并验证安装是否成功
+2.安装vscode编辑器，并设置自动补全代码（1.编辑中文 2.下载go 3.配置自动化）
+3.自动上传至github
+4.输出单词
+
+如何自动上传代码至github
+1.初始化仓库   git init
+2.配置用户名和邮箱
+git config --global user.name "你的GitHub用户名"
+git config --global user.email "你的GitHub邮箱"
+
+3.将内容添加到缓存区
+git add .
+
+4.将内容提交到本地仓库
+git commit -m "备注文本"
+
+5.查看分之名
+git branch
+
+6.连接远程仓库
+git remote add origin https://github.com/jinshanliang/golearning.git
+
+7.推送代码
+git push -u origin golearning
+其中learning 要和git branch看到的是一样的才可以进行推送
+
+注意：
+当无法上传连接到github的时候，可以临时使用代理环境变量
+# 在当前终端会话中设置代理（只对本次会话有效）
+export http_proxy=http://127.0.0.1:7890
+export https_proxy=http://127.0.0.1:7890
+
+# 然后推送
+git push -u origin 分支名
+
+
+
+一般日常更新：
+1.先查看哪些文件更新了
+git status
+2.
+添加所有更改  git add .
+或者只添加某个特定的文件
+git add main.go
+git add week01/day01/main.go
+3.提交修改
+git commit -m “写清楚修改了什么”
+
+4.然后推送
+git push

@@ -13,3 +13,5 @@
     5.2 FormatFloat 
 6.string 转换成整型int
     使用strconv.ParseInt() 的方法，返回的是两个值
+7.string 转换成float
+    使用strconv.ParseFloat() 的方法，返回值是两个，不懂了可以直接点开方法的具体参数
